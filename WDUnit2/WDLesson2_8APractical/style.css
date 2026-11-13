@@ -1,44 +1,77 @@
-html, body{
-  height:100%;
-  font-family:Arial;
-  margin:0 auto;
+html, body {
+  min-height: 100%;
+  margin: 0;
+  font-family: "Segoe Script", "Brush Script MT", cursive;
 }
-a{
-  text-decoration:none;
-  color:blue;
+
+body {
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  color: #312e81;
 }
+
+a {
+  color: #6d28d9;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #ec4899;
+  text-shadow: 0 0 10px rgba(236, 72, 153, 0.35);
+}
+
 
 /* Challenge 7: Create a class rule, container that set the display property to flex */
+.container {
+  display: flex;
+}
+
 
 /* Challenge 8: Create a class rule, column that set the flex-direction property to column */
+.column {
+  flex-direction: column;
+}
+
 
 /* Challenge 9: Create a class rule, center that set the align-items property to center and the justify-contents to center */
+.center{
+  justify-content: center;
+  align-items: cen;
+}
 
 /* Challenge 10: Modify the below CSS rule in order set the flex property for all the hyperlinks in the nav element to 1 */
-nav a{
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  transition: background 0.5s, color 0.5s;
+}
 
-  text-align:center;
-  padding:10px;
-  transition:0.5s
+nav a:hover {
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  color: white;
 }
-nav a:hover{
-    background-color:blue;
-    color:white;
-    transition:0.5s;
+
+#banner {
+  background: linear-gradient(135deg, #1d4ed8, #7c3aed, #ec4899);
+  color: white;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
-#banner{
-  background-color:blue;
-  color:white;
-  padding:20px;
+
+#body {
+  padding: 50px;
+  background: linear-gradient(180deg, #f8fafc, #e0f2fe);
 }
-#body{
-  padding:50px;
+
+#links {
+  padding: 50px;
+  background: linear-gradient(135deg, #eef2ff, #fdf2f8);
 }
-#links{
-  padding:50px;
-}
-#footer{
-  background-color:blue;
-  color:white;
-  padding:20px;
+
+#footer {
+  background: linear-gradient(135deg, #1e3a8a, #6d28d9);
+  color: white;
+  padding: 20px;
 }
