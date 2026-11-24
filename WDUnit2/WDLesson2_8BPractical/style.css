@@ -1,2 +1,132 @@
 /* Challenge 2: Use w3SchoolsMockUp.png to help you write the necessary CSS rules.
    Hint: Remember all the fundamental CSS rules when working with flexboxes */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+#banner,
+#navigation,
+#footer {
+  display: flex;
+  align-items: center;
+}
+
+#banner {
+  min-height: 44px;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.tagline {
+  margin-right: 10%;
+  font-size: 12px;
+}
+
+#navigation {
+  min-height: 44px;
+  justify-content: space-around;
+  background: green;
+  color: white;
+  font-size: 16px;
+}
+
+#body {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+}
+
+#sidebar {
+  padding: 12px 10px;
+  border-right: 1px solid #888;
+  font-size: 14px;
+  line-height: 2;
+}
+
+#sidebar a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+#sidebar a:hover {
+  text-decoration: underline;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(40px, 12vw, 180px);
+  padding: 20px;
+  text-align: center;
+}
+
+#main h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 48px);
+}
+
+#footer {
+  min-height: 34px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 8px;
+  background: green;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #banner {
+    font-size: 13px;
+  }
+
+  .tagline {
+    margin-right: 0;
+    font-size: 9px;
+  }
+
+  #navigation {
+    font-size: 12px;
+  }
+
+  #body {
+    grid-template-columns: 110px 1fr;
+  }
+
+  #sidebar {
+    padding: 10px 6px;
+    font-size: 12px;
+  }
+
+  #main {
+    gap: 20px;
+    padding: 5vh 10px;
+  }
+
+  #main h1 {
+    font-size: clamp(20px, 5vw, 32px);
+  }
+
+  #footer {
+    font-size: 10px;
+  }
+}

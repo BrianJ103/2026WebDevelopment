@@ -16,6 +16,8 @@
     <script src="script.js"></script>
     <style>
       /* Challenge 6: Using internal styling,  change the color of the web page.
+      
+
 
       /* Further challenges are located in style.css  */
 
@@ -26,17 +28,41 @@
 
       */
       
+      
     </style>
+<style>
+  body { background-color: lightblue; }
+</style>
+
   </head>
   <body>
     <!-- Challenge 1: Create the navigation bar in support of the sitemap associated with the website. -->
+<nav>
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="js.html">JavaScript</a>
+    </a>
+</nav>
+
 
     <!-- Challenge 2: Create a banner container with heading of "Web Development".  Give it a class of "banner".-->
-
+<div id="banner">
+  <h1 class="banner"> Web Development</h1>
+</div>
     <div class="main">
       <!-- Challenge 3: Add the image of webicons.png-->
+       <img src="webicons.png">
       <!-- Challenge 4: Using inline styling, resize the above image appropriately -->
+      <style>
+      img {
+        width: 800px;
+        height: 450px;
+      }
+      </style>
       <!-- Challenge 5: Write a paragraph describing web development.  Discuss the purpose of HTML, CSS and JavaScript -->
+       <p>Web development is the process of creating websites and web applications.<br>
+        HTML provides the structure and content of a page, CSS controls its<br>
+        appearance and layout, and JavaScript adds interactivity and dynamic behavior.</p>
 
     </div>
 
